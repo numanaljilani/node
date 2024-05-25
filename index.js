@@ -1,5 +1,4 @@
 const express = require('express');
-require("./bin/www");
 
 const app = express(); // Create an Express application
 
