@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 // Route for the homepage (/)
 app.get('/', (req, res) => {
-  res.send("server is working");// Serve the index.html file
+  res.sendFile(__dirname + '/public/index.html'); // Serve the index.html file
 });
 
 // Route for a sample API endpoint (`/api/message`)
